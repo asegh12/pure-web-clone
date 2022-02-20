@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+}
+.top-video-section {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.top-video-section .fas {
+    margin-right: 10px;
+}
+
+.real_video {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+}
+
+.real_video video {
+    width: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one {
+    margin: 10px 10px;
+}
+
+.video-tags {
+    color: #045FD4;
+    font-size: 12px;
+}
+
+.video-title-box{
+    display: flex;
+
+}
+
+
+.title-bnt {
+    margin-left: 30px;
+    background-color: #EFEFEF;
+}
+
+.video-upload-info,
+.youtuber-subscribers,
+.next-youtuber-name,
+.next-subscribers  {
+    font-size: 10px;
+    color: #909090;
+}
+
+.video-interesting {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video-interesting a {
+    text-decoration: none;
+    color: #909090;
+    text-align: center;
+}
+
+.fa-thumbs-up {
+    color: blue;
+}
+
+.video-interesting a {
+    background-color: #EFEFEF;
+}
+
+.video-interesting-text {
+    font-size: 10px;
+}
+
+.youtuber-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EFEFEF;
+    border-bottom : 1px solid #EFEFEF;
+    padding: 15px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.youtuber-meta {
+    display: flex;
+    align-items: center;
+}
+
+.youtuber-info img {
+    width: 36px;
+    border-radius: 70%;
+    margin-right: 20px;
+    
+}
+
+.youtuber-name {
+    font-size: 14px;
+}
+
+.bnt-sub {
+    text-decoration: none;
+    color: red;
+    background-color: #EFEFEF;
+    padding: 10px 0px 10px 0px;
+}
+
+.next-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Up-next {
+    font-size: 14px;
+    color: #909090;
+    margin: 10px 5px;
+}
+
+.next-box img {
+    width : 30%;
+    margin-right: 10px;
+}
+
+.title-threedot {
+    display: flex;
+}
+
+.title-threedot>.fa-ellipsis-v {
+    margin: 0px 3px;
+    padding : 0px 5px;
+    background-color: #EFEFEF;
+}
+
+.next-video-name {
+    font-size: 14px;
+}
+
+@media(min-width:768px) {
+    .main-section{
+        flex-direction: row;
+    }
+}

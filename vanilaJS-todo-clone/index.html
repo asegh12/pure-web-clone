@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>vanilaJS-todo-clone</title>
+</head>
+<body>
+    <form class="hidden" id="login-form">
+        <input 
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+            class="login-form-text"
+        />
+    </form>
+    
+    <div id="main-page" class='hidden'>
+        <h3 class="clock"></h3>
+
+        <h1 id="greeting"></h1>
+
+        <div style="margin:auto; text-align:center">
+            <form id="todo-form">
+                <button class='hidden'>🙌</button>
+                <input type="text" placeholder="Enter your main to-do">
+                <span id="todo-form-text" class="hidden"></span>
+            </form>
+        </div>
+
+        <div style="margin:auto; text-align:center">
+            <button id='todo-bnt'>Make your to do list</button>
+        </div>
+        
+        <ul id="todo-list" class="hidden">
+            <form>
+                <input type="text" required placeholder="Type your to dos">
+            </form>
+        </ul>
+
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div> 
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

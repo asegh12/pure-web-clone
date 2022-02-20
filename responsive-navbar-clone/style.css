@@ -1,0 +1,93 @@
+body {
+    background-color: LightSlateGrey;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: CadetBlue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo-name {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .logo-name i {
+    color: #d49466;
+  }
+  
+  
+  .menu-bar {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .menu-bar li {
+    padding: 8px 12px;
+  }
+  
+  .menu-bar li:hover{
+    background-color: #d49466;
+    border-radius: 4px;
+  }
+  
+  .social {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    color: white;
+    padding-left: 0;
+  }
+  
+  .social li {
+    padding: 8px 12px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media(max-width:760px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .menu-bar {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .menu-bar li {
+      text-align: center;
+      width: 100%;
+    }
+    .social {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 15px;
+      font-size: 24px;
+    }
+    .social.active,
+    .menu-bar.active {
+      display: flex;
+    }
+  }
